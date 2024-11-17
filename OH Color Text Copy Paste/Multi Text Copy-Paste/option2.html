@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Color Text Copier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Heading -->
+        <h1>Multi Color Text Copier</h1>
+
+        <!-- Main Container for Color Picker and Text Inputs -->
+        <div class="container">
+            <div class="color-box" id="colorBox">
+                <div class="color-item">
+                    <input type="color" class="color-picker">
+                    <input type="text" class="text-input" placeholder="Enter text">
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Result Section -->
+        <div class="live-result-section">
+            <h2>Live Result:</h2>
+            <div id="liveResult" contenteditable="true" class="live-result"></div>
+        </div>
+
+        <!-- Action Buttons: Add, Reset, and Copy -->
+        <div class="action-buttons">
+            <button class="add-btn" id="addColor">+</button>
+            <button class="reset-btn" id="resetBtn">Reset</button>
+            <button class="copy-btn" id="copyBtn">Copy</button>
+        </div>
+
+        <!-- Popup for copied confirmation -->
+        <div class="popup" id="popup">Copied!</div>
+    </div>
+
+<!-- Buy Me a Coffee Button -->
+    <div class="buy-coffee-container">
+        <a href="https://www.buymeacoffee.com/pixelsofarya" target="_blank">
+            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 50px; width: 180px;">
+        </a>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
