@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Text Copier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OH Colorful Texts</h1>
+
+        <!-- Color picker to choose the color -->
+        <a>Select Color:</a>  
+        <label for="colorPicker"></label>
+        <input type="color" id="colorPicker" value="#000000">
+
+        <!-- Text area for user input -->
+        <a>Enter Text (Max 100 characters):</a>  
+        <label for="textInput"></label>
+        <textarea id="textInput" rows="4" placeholder="Type your text here..." maxlength="100"></textarea>
+        <div id="charCount">Characters left: 100</div>
+
+        <!-- Button to copy text with the selected color -->
+        <button id="copyButton">Copy Text with Color</button>
+
+        <!-- Reset button to clear the text and reset the color picker -->
+        <button id="resetButton">Reset</button>
+    </div>
+
+<!-- Buy Me a Coffee Button -->
+    <div class="buy-coffee-container">
+        <a href="https://www.buymeacoffee.com/pixelsofarya" target="_blank">
+            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 50px; width: 180px;">
+        </a>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

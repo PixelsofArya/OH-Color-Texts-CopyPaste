@@ -1,0 +1,130 @@
+/* Basic styles for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('once human wallaper 1.jpg'); /* Optional: set a background image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container styling */
+.container {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent white background */
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Darker shadow */
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for contrast */
+}
+
+/* Heading styling */
+h1 {
+    margin-bottom: 20px;
+    color: #fff; /* White color for the heading */
+}
+
+/* Styling for the color picker */
+input[type="color"] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin-top: 10px;
+  margin-bottom: 7px;
+    background-color: transparent;
+}
+
+/* Styling for the text area (fixed height and solid) */
+textarea {
+    width: 270px;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    border-radius: 5px;
+    resize: none;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Button styling */
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #6200ea; /* Dark purple */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3700b3; /* Darker purple on hover */
+}
+
+/* Reset button styling */
+#resetButton {
+    background-color: #ff0031; /* Bright red for reset */
+}
+
+#resetButton:hover {
+    background-color: #ad0000; /* Darker red on hover */
+}
+
+/* Popup styling */
+.popup {
+    position: absolute;
+    top: 58.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00c441;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 9999;
+    font-size: 14px;
+}
+/* Styling for the character count */
+#charCount {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff; /* White text color */
+}
+
+/* Buy Me a Coffee Button Styling */
+.buy-coffee-container {
+    position: fixed; /* Fixes the button to the viewport */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensure it appears above other content */
+    text-align: center; /* Center the button */
+}
+
+.buy-coffee-container img {
+    border-radius: 10px; /* Optional: Round the corners of the button */
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.buy-coffee-container img:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+
+    .color-item {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,218 @@
+/* Reset all styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling for dark theme with background image */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('once human wallaper 1.jpg'); /* Add your background image here */
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Make the image fixed as you scroll */
+    color: #ffffff; /* Light text color */
+  text-shadow: 2px 2px 3px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/* Wrapper styling */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff; /* White text for heading */
+}
+/* Heading styling with a box */
+h1 {
+    
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark background for the heading */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+/* Heading styling */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff; /* White text for heading */
+}
+/* Heading styling with a box */
+h2 {
+    
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark background for the heading */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+/* Container styling with glass effect */
+.container {
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent dark background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    backdrop-filter: blur(10px); /* Glass effect */
+    position: relative;
+}
+
+/* Color box section styling */
+.color-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Individual color-item styling */
+.color-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Styling for color picker input */
+.color-picker {
+    width: 40px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Styling for text input field */
+.text-input {
+    width: 197px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2a2a2a; /* Dark background for input */
+    color: #e0e0e0; /* Light text */
+}
+
+/* Action buttons container styling */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 20px;
+}
+
+/* Action button styling */
+.add-btn, .reset-btn, .copy-btn {
+    padding: 10px ;
+    font-size: 18px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.add-btn:hover, .reset-btn:hover, .copy-btn:hover {
+    background-color: #1565c0;
+}
+
+/* Live result section styling */
+.live-result-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Live result editable area styling */
+.live-result {
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent dark background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 10px;
+    color: #e0e0e0; /* Light text */
+    overflow-wrap: break-word;
+    backdrop-filter: blur(5px); /* Glass effect */
+}
+
+/* Popup styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 189, 54, 1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+
+/* Buy Me a Coffee Button Styling */
+.buy-coffee-container {
+    position: fixed; /* Fixes the button to the viewport */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensure it appears above other content */
+    text-align: center; /* Center the button */
+}
+
+.buy-coffee-container img {
+    border-radius: 10px; /* Optional: Round the corners of the button */
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.buy-coffee-container img:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+}
+
+
+/* Responsive design for mobile */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+
+    .color-item {
+        flex-direction: column;
+    }
+}
