@@ -29,7 +29,7 @@ function showPopup(message) {
 
 // Update character count on input
 textInput.addEventListener('input', () => {
-    const remainingChars = 140 - textInput.value.length; // 100 is the max length
+    const remainingChars = 132 - textInput.value.length; // 100 is the max length
     charCount.textContent = `Characters left: ${remainingChars}`;
 });
 
@@ -61,6 +61,6 @@ copyButton.addEventListener('click', () => {
 resetButton.addEventListener('click', () => {
     textInput.value = '';  // Clear the text area
     colorPicker.value = '#000000';  // Reset the color picker to black
-    charCount.textContent = 'Characters left: 140';  // Reset character count to 100
+    charCount.textContent = 'Characters left: 132';  // Reset character count to 100
     showPopup('Reset!');  // Show the "Reset" popup
 });
